@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Form</title>
+  <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="projectForm">
+      <label for="projectID">Project ID</label>
+      <input type="text" id="projectID" name="projectID" required>
+
+      <label for="projectName">Project Name</label>
+      <input type="text" id="projectName" name="projectName" disabled required>
+
+      <label for="assignedTo">Assigned To</label>
+      <input type="text" id="assignedTo" name="assignedTo" disabled required>
+
+      <label for="assignmentDate">Assignment Date</label>
+      <input type="date" id="assignmentDate" name="assignmentDate" disabled required>
+
+      <label for="deadline">Deadline</label>
+      <input type="date" id="deadline" name="deadline" disabled required>
+
+      <button type="button" id="saveBtn" disabled>Save</button>
+      <button type="button" id="updateBtn" disabled>Update</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/public/js/form.js"></script>
+</body>
+</html>
